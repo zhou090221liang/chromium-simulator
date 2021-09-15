@@ -39,7 +39,7 @@ async function _launch(options) {
         headless: options.headless != undefined ? options.headless : true,
         devtools: options.devtools != undefined ? options.devtools : false,
         executablePath: options.executablePath || null,
-        timeout: options.timeout != undefined ? options.timeout : false,
+        timeout: options.timeout != undefined ? options.timeout : 30000,
         dumpio: options.dumpio != undefined ? options.dumpio : false,
     };
     if (this._browser) {
